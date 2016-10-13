@@ -2,24 +2,110 @@
 YOUR STYLES
 *******************/
 
+article {
+    margin: 0 auto;
+    padding: 3em;
+}
 
+h1 {
+    font-size: 6em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* First Frame */
+
+.char1,
+.char4,
+.char10 {
+    background: orange;
+    box-shadow: inset 0 0 8px #fff;
+    display: inline-block;
+    padding: .25em;
+    border-bottom: 20px solid #fff;
+    transition: transform .5s;
+}
+
+.char4 {
+    letter-spacing: 4px;
+}
+
+
+/* Last Frame */
+
+.char1:hover {
+    transform: rotate(-5deg) scale(.75);
+}
+
+.char4:hover {
+    transform: rotate(15deg) scale(1.25);
+}
+
+.char10:hover {
+    transform: rotate(10deg);
+}
+
+
+/* Keyframe Animation */
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+article img:hover {
+  animation: rubberBand 1s infinite;
+}
 
 
 /********************
 MEDIA QUERIES
 *******************/
 
-/* Desktop */
-@media (min-width: 1200px) {
 
-}
+/* Desktop */
+
+@media (min-width: 1200px) {}
+
 
 /* Tablet */
-@media (min-width: 768px) {
 
-}
+@media (min-width: 768px) {}
+
 
 /* Mobile */
-@media (min-width: 480px) {
 
-}
+@media (min-width: 480px) {}
