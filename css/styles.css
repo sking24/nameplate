@@ -90,6 +90,32 @@ article img:hover {
   animation: rubberBand 1s infinite;
 }
 
+/* MASONRY */
+
+/* styles.css */
+main {
+  margin: 0 auto;
+  width: 50%;
+}
+
+section {
+  background: firebrick;
+  float: left;
+  width: 200px;
+  border: 1px dashed white;
+}
+
+.venti {
+  height: 400px;
+}
+
+.grande {
+  height: 300px;
+}
+
+.short {
+  height: 200px;
+}
 
 /********************
 MEDIA QUERIES
