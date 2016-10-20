@@ -2,48 +2,75 @@
 YOUR STYLES
 *******************/
 
+body {
+    text-align: center;
+    font-family: "Helvetica";
+}
+
+div {
+    background: #9f8787;
+    margin: 120px;;
+    padding: 10px;
+}
+
+
 article {
     margin: 0 auto;
     padding: 3em;
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 8em;
     text-align: center;
-    text-transform: uppercase;
+    
+}
+
+ul {
+
+    list-style-type: none;
+}
+p {
+    font-size: 25px;
+    padding: 40px;
+    color: #f4e9e9;
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 
 /* First Frame */
 
 .char1,
+.char2,
+.char3,
 .char4,
+.char5,
+.char7,
+.char8,
+.char9,
 .char10 {
-    background: orange;
-    box-shadow: inset 0 0 8px #fff;
-    display: inline-block;
-    padding: .25em;
-    border-bottom: 20px solid #fff;
-    transition: transform .5s;
+   color: white;
 }
 
-.char4 {
-    letter-spacing: 4px;
-}
-
-
-/* Last Frame */
-
-.char1:hover {
-    transform: rotate(-5deg) scale(.75);
-}
-
-.char4:hover {
-    transform: rotate(15deg) scale(1.25);
-}
-
+.char1:hover,
+.char2:hover,
+.char3:hover,
+.char4:hover,
+.char5:hover,
+.char7:hover,
+.char8:hover,
+.char9:hover, 
 .char10:hover {
-    transform: rotate(10deg);
+    color:lightpink;
 }
 
 
@@ -116,6 +143,15 @@ section {
 .short {
   height: 200px;
 }
+
+img {
+    height: 400px;
+    width: 400px;   
+}
+
+
+
+
 
 /********************
 MEDIA QUERIES
