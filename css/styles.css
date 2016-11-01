@@ -1,0 +1,123 @@
+/********************
+YOUR STYLES
+*******************/
+
+/* Layout */
+* { box-sizing: border-box; }
+
+section {
+  /* Fallback: Floated in No JS */
+  float: left;
+  padding: 1em;
+}
+
+/* clearfix */
+section:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+article {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+    text-transform: uppercase;
+    color: rosybrown;
+}
+
+h3 {
+    color: antiquewhite;
+    font-size: 23px;
+}
+p {
+    color: aliceblue;
+    font-size: 18px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;   
+    font-size: 19px;
+}
+
+ul {
+    list-style: none;
+    color: aliceblue
+}
+
+.interests {
+    list-style-type:square;
+}
+
+/* Masonry Styling */
+section {
+  background: rgba(167, 167, 167, 0.88);
+  border: 1px solid #b9abab;
+  /* vertical space between */
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.tall {
+  height: 600px;
+}
+
+.med {
+  height: 400px;
+    color: antiquewhite;
+}
+
+.short {
+  height: 200px;
+}
+
+/********************
+MEDIA QUERIES
+*******************/
+
+/* Desktop */
+@media screen 
+  /* 2560px = 160em */
+  and (max-width: 160em)
+  /* 1280px = 80em */
+  and (min-width: 80em) { 
+  
+  /* Temporary Styling. Add your own. */
+  body {
+       background-image: url("/img/bg.jpg");
+  }
+
+}
+
+/* Tablet */
+@media screen 
+   /* 1279 = 79.9375em */  
+  and (max-width: 79.9375em)
+   /* 768px = 160em */
+  and (min-width: 48em)  {
+  
+  /* Temporary Styling. Add your own. */
+  body {
+       background-image: url("/img/bg.jpg");
+  }
+
+}
+
+/* Mobile */
+@media screen
+  /* 767px = 47.9375em */
+  and (max-width: 47.9375em)
+  /* 320px = 20em */
+  and (min-width: 20em) { 
+  
+  /* Temporary Styling. Add your own. */
+  body {
+       background-image: url("/img/bg.jpg");
+  }
+  
+}
